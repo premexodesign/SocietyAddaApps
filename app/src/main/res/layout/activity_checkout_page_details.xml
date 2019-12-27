@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".visitorinfo.CheckoutPageDetailsActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="14dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/checkoutproimg"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/profileimgcorner"
+
+                />
+            <TextView
+                android:id="@+id/checkoutproname"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Number"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:id="@+id/checkoutpronumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:text="7359910659"
+                android:textSize="18dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Reason to visit"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:id="@+id/checkoutproreason"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:text="7359910659"
+                android:textSize="18dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Relation"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:id="@+id/checkoutprorelation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:text="7359910659"
+                android:textSize="18dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Reference Code"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:id="@+id/checkoutprorefcode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:text="7359910659"
+                android:textSize="18dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Vehicle No."
+                android:textSize="18dp"
+                />
+            <TextView
+                android:id="@+id/checkoutprovehcleno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:text="7359910659"
+                android:textSize="18dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Wing"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:id="@+id/checkoutprowing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:text="7359910659"
+                android:textSize="18dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Flat No."
+                android:textSize="18dp"
+                />
+            <TextView
+                android:id="@+id/checkoutproflatno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:text="7359910659"
+                android:textSize="18dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Check-in Date"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:id="@+id/checkoutprocheckindate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:text="7359910659"
+                android:textSize="18dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Check-in Time"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:id="@+id/checkoutprocheckintime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:text="7359910659"
+                android:textSize="18dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Check-out Date"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:id="@+id/checkoutprocheckoutdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:text="7359910659"
+                android:textSize="18dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Check-out Time"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:id="@+id/checkoutprocheckouttime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:text="7359910659"
+                android:textSize="18dp"
+                />
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+</LinearLayout>
+</ScrollView>

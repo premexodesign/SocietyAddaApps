@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.navigation_drawer.ui.dashboard.DashBoardFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_dash_board" />
+
+    <fragment
+        android:id="@+id/nav_myprofile"
+        android:name="com.example.navigation_drawer.ui.myprofile.MyProfile"
+        android:label="@string/menu_myprofile"
+        tools:layout="@layout/fragment_myprofile" />
+
+    <fragment
+        android:id="@+id/nav_myflate"
+        android:name="com.example.navigation_drawer.ui.myflat.MyFlateFragment"
+        android:label="@string/menu_myflatdetails"
+        tools:layout="@layout/fragment_myflat" />
+
+    <fragment
+        android:id="@+id/nav_myparkingvehicle"
+        android:name="com.example.navigation_drawer.ui.myparkingvehicle.myparkingvehicleFragment"
+        android:label="@string/menu_myparkingnvehicle"
+        tools:layout="@layout/fragment_myparkingvehicle" />
+
+    <fragment
+        android:id="@+id/nav_mygroup"
+        android:name="com.example.navigation_drawer.ui.mygroup.MyGroupFragment"
+        android:label="@string/menu_mygroup"
+        tools:layout="@layout/fragment_mygroup" />
+
+    <fragment
+        android:id="@+id/nav_mybankaccount"
+        android:name="com.example.navigation_drawer.ui.mybankaccount.MyBankAccountFragment"
+        android:label="@string/menu_mybankaccount"
+        tools:layout="@layout/fragment_mybankaccount" />
+
+    <fragment
+        android:id="@+id/nav_fnq"
+        android:name="com.example.navigation_drawer.ui.fnq.F_QFragment"
+        android:label="@string/menu_fnq"
+        tools:layout="@layout/fragment_f__q" />
+
+    <fragment
+        android:id="@+id/nav_loginnsecurity"
+        android:name="com.example.navigation_drawer.ui.loginsecurity.LoginSecutiryFragment"
+        android:label="@string/menu_loginnsecurity"
+        tools:layout="@layout/fragment_loginsecurity" />
+    <fragment
+        android:id="@+id/nav_privacypolicy"
+        android:name="com.example.navigation_drawer.ui.privacypolicy.PrivacyPolicyFragment"
+        android:label="@string/menu_privacypolicy"
+        tools:layout="@layout/fragment_privacy_policy" />
+
+    <fragment
+        android:id="@+id/nav_deregister"
+        android:name="com.example.navigation_drawer.ui.deregister.DeregisterFragment"
+        android:label="@string/menu_deregister"
+        tools:layout="@layout/fragment_deregister" />
+
+    <fragment
+        android:id="@+id/nav_desk"
+        android:name="com.example.navigation_drawer.ui.desk.DeskFragment"
+        android:label="@string/menu_desk"
+        tools:layout="@layout/fragment_desk" />
+
+</navigation>

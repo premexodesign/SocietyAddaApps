@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/checkoutll"
+    >
+
+    <TextView
+        android:id="@+id/txtcheckoutpersonname"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="8"
+        android:maxLength="19"
+        android:text="12121121"
+        android:textSize="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txtcheckoutpersonnum"
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="30dp"
+        android:maxLength="13"
+        android:text="121211211"
+        android:textSize="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txtcheckoutpersondate"
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:layout_height="30dp"
+        android:maxLength="10"
+        android:text="12121121"
+        />
+
+    <TextView
+        android:id="@+id/txtcheckoutpersontime"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="30dp"
+        android:text="12121121"
+        android:maxLength="5"
+
+        />
+
+
+</LinearLayout>

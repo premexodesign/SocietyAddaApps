@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="14dp"
+    tools:context=".wings.WingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numbers of Wings: From" />
+
+        <EditText
+            android:id="@+id/wings_wingsfrom"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:hint="ex. A"
+            android:inputType="text"
+            android:maxLength="1"
+            android:nextFocusDown="@id/wings_wingsto"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To" />
+
+        <EditText
+            android:id="@+id/wings_wingsto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:hint="ex. J"
+            android:inputType="text"
+            android:maxLength="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numbers of Floors" />
+
+        <EditText
+            android:id="@+id/wings_nooffloor"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:hint="ex. 10"
+            android:inputType="number"
+            android:maxLength="3"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numbers of Flats on Every Floor" />
+
+        <EditText
+            android:id="@+id/wings_noofflat"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:hint="ex.10"
+            android:maxLength="2"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/wings_wingsbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/checkimgwings" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wings"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Floors"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Flats"/>
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/wings_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="3dp"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add new" />
+
+        <EditText
+            android:id="@+id/wings_addwing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:maxLength="2"
+            android:hint="Wing" />
+
+        <EditText
+            android:id="@+id/wings_addfloor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="3"
+            android:hint="Floor" />
+
+        <EditText
+            android:id="@+id/wings_addflat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="Flat"
+            android:maxLength="2"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

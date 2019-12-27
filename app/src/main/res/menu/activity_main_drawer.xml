@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_dashboard" />
+        <item
+            android:id="@+id/nav_myprofile"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_myprofile" />
+        <item
+            android:id="@+id/nav_myflate"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_myflatdetails" />
+        <item
+            android:id="@+id/nav_myparkingvehicle"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_myparkingnvehicle" />
+        <item
+            android:id="@+id/nav_mygroup"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_mygroup" />
+        <item
+            android:id="@+id/nav_mybankaccount"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_mybankaccount" />
+        <item
+            android:id="@+id/nav_fnq"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_fnq" />
+        <item
+            android:id="@+id/nav_loginnsecurity"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_loginnsecurity" />
+        <item
+            android:id="@+id/nav_privacypolicy"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_privacypolicy" />
+        <item
+            android:id="@+id/nav_deregister"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_deregister" />
+        <item
+            android:id="@+id/nav_desk"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_desk" />
+    </group>
+
+</menu>

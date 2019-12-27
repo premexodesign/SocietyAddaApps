@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Navigation_Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_myprofile">My Profile</string>
+    <string name="menu_myflatdetails">My Flat Details</string>
+    <string name="menu_myparkingnvehicle">My Parking &amp; Vehicle</string>
+    <string name="menu_mygroup">My Group</string>
+    <string name="menu_mybankaccount">My Bank Account</string>
+    <string name="menu_fnq">F &amp; Q</string>
+    <string name="menu_loginnsecurity">Login &amp; Security</string>
+    <string name="menu_privacypolicy">Privacy Policy</string>
+    <string name="menu_deregister">De-register</string>
+    <string name="menu_desk">Desk</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_check_in_out">Check In Out</string>
+
+</resources>
