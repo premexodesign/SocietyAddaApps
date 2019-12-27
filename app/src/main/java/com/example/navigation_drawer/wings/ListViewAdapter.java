@@ -48,10 +48,17 @@ public class ListViewAdapter extends BaseExpandableListAdapter {
     @Override
     public ArrayList<String> getChild(int groupPosition, int childPosition) {
         ArrayList<String> childdata=new ArrayList<>();
-        childdata.add(childItems.get(groupPosition).getGroupdata().get(childPosition));
-        childdata.add(childItems.get(groupPosition).getGroup2wheeldata().get(childPosition));
-        childdata.add(childItems.get(groupPosition).getGroup4wheeldata().get(childPosition));
-        childdata.add(childItems.get(groupPosition).getGroupHouseType().get(childPosition));
+        try {
+            childdata.add(childItems.get(groupPosition).getGroupdata().get(childPosition));
+            childdata.add(childItems.get(groupPosition).getGroup2wheeldata().get(childPosition));
+            childdata.add(childItems.get(groupPosition).getGroup4wheeldata().get(childPosition));
+            childdata.add(childItems.get(groupPosition).getGroupHouseType().get(childPosition));
+        }catch (NullPointerException e){
+            childdata.add("");
+            childdata.add("");
+            childdata.add("");
+            childdata.add("");
+        }
         return childdata;
     }
 
@@ -91,7 +98,6 @@ public class ListViewAdapter extends BaseExpandableListAdapter {
     public View getChildView(final int groupPosition, final int childPosition, boolean isLastChild,
                              View convertView, ViewGroup parent) {
 
-//        final String childText = (String) getChild(groupPosition, childPosition);
         final  ArrayList<String> childData=getChild(groupPosition,childPosition);
         if (convertView == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.activity
@@ -101,9 +107,9 @@ public class ListViewAdapter extends BaseExpandableListAdapter {
 
         TextView textViewChild = convertView
                 .findViewById(R.id.wings_details_flatno);
-        EditText wheeler2edittext=convertView.findViewById(R.id.wings_details_list_twowheeler);
-        EditText wheeler4edittext=convertView.findViewById(R.id.wings_details_list_fourwheeler);
-        EditText houseType=convertView.findViewById(R.id.wings_details_list_housetype);
+        TextView wheeler2edittext=convertView.findViewById(R.id.wings_details_list_twowheeler);
+        TextView wheeler4edittext=convertView.findViewById(R.id.wings_details_list_fourwheeler);
+        TextView houseType=convertView.findViewById(R.id.wings_details_list_housetype);
         ImageButton imgbtn = convertView.findViewById(R.id.delete_item);
 
         imgbtn.setOnClickListener(new View.OnClickListener() {
@@ -121,12 +127,13 @@ public class ListViewAdapter extends BaseExpandableListAdapter {
 //
 //            @Override
 //            public void onTextChanged(CharSequence s, int start, int before, int count) {
-//                childItems.get(groupPosition).getGroup2wheeldata().set(childPosition,wheeler2edittext.getText().toString());
+//                childItems.get(groupPosition).group2wheeldata.set(childPosition,wheeler2edittext.getText().toString());
+////                childItems.get(groupPosition).group2wheeldata.get(childPosition);
 //            }
 //
 //            @Override
 //            public void afterTextChanged(Editable s) {
-//
+////                notifyDataSetChanged();
 //            }
 //        });
 

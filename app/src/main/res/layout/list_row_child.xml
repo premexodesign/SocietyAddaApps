@@ -12,26 +12,36 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:textSize="17dp"
+        android:textSize="@dimen/textview_size_global"
+        android:hint="Flat No"
         />
-    <EditText
+    <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:id="@+id/wings_details_list_twowheeler"/>
+        android:id="@+id/wings_details_list_twowheeler"
+        android:textSize="@dimen/textview_size_global"
+        android:hint="2 Wheel"
+        />
 
-    <EditText
+    <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:id="@+id/wings_details_list_fourwheeler"/>
+        android:id="@+id/wings_details_list_fourwheeler"
+        android:textSize="@dimen/textview_size_global"
+        android:hint="4 Wheel"
+        />
 
-    <EditText
+    <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="2"
         android:singleLine="true"
-        android:id="@+id/wings_details_list_housetype"/>
+        android:id="@+id/wings_details_list_housetype"
+        android:textSize="@dimen/textview_size_global"
+        android:hint="House Type"
+        />
 
     <ImageButton
         android:layout_width="wrap_content"
