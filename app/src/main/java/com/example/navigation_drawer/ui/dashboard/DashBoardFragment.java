@@ -23,9 +23,9 @@ public class DashBoardFragment extends Fragment {
     private View view;
     private GridView gv;
     GridCustomAdapter gca;
-    private String[] names={"Society","Member","Wings","Parking","Complaints","Events","Emergency","Facility","Services","Account",
+    private String[] names={"Society","Member","Tenant","Wings","Parking","Complaints","Events","Emergency","Facility","Services","Account",
             "Profile","Notice Board","Visitor Info","Message","Balance Manager"};
-    private int [] imgs={R.mipmap.society,R.mipmap.member3,R.mipmap.wings1,R.mipmap.parking,R.mipmap.complain,R.mipmap.events1,
+    private int [] imgs={R.mipmap.society,R.mipmap.member3,R.mipmap.tenant,R.mipmap.wings1,R.mipmap.parking,R.mipmap.complain,R.mipmap.events1,
             R.mipmap.emergency,R.mipmap.facilieties,R.mipmap.services,R.mipmap.account,
             R.mipmap.profile,R.mipmap.notice_board,R.mipmap.visitersinfp,R.mipmap.message,R.mipmap.balance_manager};
     public DashBoardFragment() {

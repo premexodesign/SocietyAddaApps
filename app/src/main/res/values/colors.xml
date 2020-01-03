@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#fec106</color>
     <color name="colorPrimaryDark">#fec106</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#fc9b00</color>
     <color name="dashfragback">#E7E7E7</color>
 <!--    <color name="colorPrimaryDark">#fc9b00</color>-->
 </resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="14dp"
+    tools:context=".tenant.TenantActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/tenant_houseid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="House" />
+
+        <EditText
+            android:id="@+id/tenant_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name" />
+
+        <EditText
+            android:id="@+id/tenant_middlename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Middle Name" />
+
+        <EditText
+            android:id="@+id/tenant_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name" />
+
+        <EditText
+            android:id="@+id/tenant_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/tenant_Permanent_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:maxLines="5"
+            android:hint="Permanent Address" />
+
+        <EditText
+            android:id="@+id/tenant_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City" />
+
+        <EditText
+            android:id="@+id/tenant_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State" />
+
+        <EditText
+            android:id="@+id/tenant_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Pincode"/>
+
+        <EditText
+            android:id="@+id/tenant_pancardno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pancard No." />
+
+        <EditText
+            android:id="@+id/tenant_aadharcardno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Aadharcard No."
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/tenant_contactno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact No."
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/tenant_refcontact1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reference Contact"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/tenant_refcontact2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reference Contact"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/tenant_rentstart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rent Start Date" />
+
+        <EditText
+            android:id="@+id/tenant_rentend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rent End Date" />
+
+        <EditText
+            android:id="@+id/tenant_rentagreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rent Agreement"/>
+
+        <EditText
+            android:id="@+id/tenant_aadharimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Addhar Card img"/>
+
+        <EditText
+            android:id="@+id/tenant_pancardimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PanCard img"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

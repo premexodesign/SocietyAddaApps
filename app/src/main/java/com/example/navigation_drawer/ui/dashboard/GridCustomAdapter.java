@@ -9,10 +9,12 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.navigation_drawer.R;
 import com.example.navigation_drawer.members.MemberListActivity;
 import com.example.navigation_drawer.society.SocietyFormActivity;
+import com.example.navigation_drawer.tenant.TenantActivity;
 import com.example.navigation_drawer.visitorinfo.VisitorInfoFormActivity;
 import com.example.navigation_drawer.wings.WingsActivity;
 
@@ -63,6 +65,11 @@ public class GridCustomAdapter extends ArrayAdapter<String> {
                         Intent intent3=new Intent(context, WingsActivity.class);
                         context.startActivity(intent3);
                         break;
+                    case "Tenant":
+                        Intent intent4=new Intent(context, TenantActivity.class);
+                        context.startActivity(intent4);
+                        break;
+
                 }
 
             }
