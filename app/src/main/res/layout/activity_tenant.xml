@@ -120,23 +120,102 @@
             android:layout_height="wrap_content"
             android:hint="Rent End Date" />
 
-        <EditText
-            android:id="@+id/tenant_rentagreement"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Rent Agreement"/>
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tenant_rentagreement_choose"
+                android:src="@drawable/choosefile"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tenant_rentagreement_capture"
+                android:src="@drawable/captureimg"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/tenant_agreementimg"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/tenant_rentagreement_path"
+                android:text="Rent Agreement"/>
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/tenant_aadharimg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Addhar Card img"/>
 
-        <EditText
-            android:id="@+id/tenant_pancardimg"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="PanCard img"/>
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tenant_aadharcard_choose"
+                android:src="@drawable/choosefile"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tenant_aadharcard_capture"
+                android:src="@drawable/captureimg"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/tenant_aadharimg"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/tenant_aadharcard_path"
+                android:text="Aadhar Card"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tenant_pancard_choose"
+                android:src="@drawable/choosefile"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tenant_pancard_capture"
+                android:src="@drawable/captureimg"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/tenant_pancardimg"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/tenant_pancard_path"
+                android:text="Pancard "/>
+        </LinearLayout>
 
 
 
