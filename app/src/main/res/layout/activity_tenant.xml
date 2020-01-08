@@ -149,6 +149,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:id="@+id/tenant_rentagreement_path"
+                android:textSize="@dimen/textview_size_global"
                 android:text="Rent Agreement"/>
         </LinearLayout>
 
@@ -182,6 +183,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:id="@+id/tenant_aadharcard_path"
+                android:textSize="@dimen/textview_size_global"
                 android:text="Aadhar Card"/>
         </LinearLayout>
 
@@ -214,9 +216,64 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:id="@+id/tenant_pancard_path"
+                android:textSize="@dimen/textview_size_global"
                 android:text="Pancard "/>
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tenant Type"
+                android:textSize="17dp"
+                />
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/tenant_tenanttype"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tenant_numberofperson"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Number of Person"
+                android:inputType="number"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tenant_submitnumberofperson"
+                android:src="@drawable/checkimgwings"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tenant_bachelordetailsview"
+            android:visibility="gone"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tenant_btnsubmit"
+            android:text="@string/submit_txt"
+            />
 
 
     </LinearLayout>

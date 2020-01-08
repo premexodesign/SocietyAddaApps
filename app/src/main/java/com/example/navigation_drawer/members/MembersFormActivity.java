@@ -21,6 +21,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.navigation_drawer.R;
+import com.example.navigation_drawer.tenant.TenantActivity;
+import com.nbsp.materialfilepicker.MaterialFilePicker;
+import com.nbsp.materialfilepicker.ui.FilePickerActivity;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -30,9 +33,9 @@ public class MembersFormActivity extends AppCompatActivity {
 
     private TextView textView;
     private Button browsebtn;
-    private Intent intent;
     private ImageView imageView;
     private Spinner prefixspinner;
+    private final int FILE_CHOOOSER_CODE=7;
     String [] prefixdata={"Mr.","Ms.","Mrs"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,9 +49,10 @@ public class MembersFormActivity extends AppCompatActivity {
         browsebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(Intent.ACTION_GET_CONTENT);
-                intent.setType("*/*");
-                startActivityForResult(intent, 7);
+                new MaterialFilePicker()
+                        .withActivity(MembersFormActivity.this)
+                        .withRequestCode(FILE_CHOOOSER_CODE)
+                        .start();
             }
         });
         ArrayAdapter<String> spinneradapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,prefixdata);
@@ -60,38 +64,53 @@ public class MembersFormActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         switch(requestCode){
 
-            case 7:
+            case FILE_CHOOOSER_CODE:
 
                 if(resultCode==RESULT_OK){
 
-                    String FilePath = data.getData().getPath();
-                    String FileName = data.getData().getLastPathSegment();
-                    int lastPos = FilePath.length() - FileName.length();
-                    String Folder = FilePath.substring(0, lastPos);
-                    String [] originalpath=FilePath.split(":");
+                    String filePath = data.getStringExtra(FilePickerActivity.RESULT_FILE_PATH);
+//                    textView.setText(filePath);
+                    imageView.setImageBitmap(getImageFileFromSDCard(filePath));
+//                    String FilePath = data.getData().getPath();
+//                    String FileName = data.getData().getLastPathSegment();
+//                    int lastPos = FilePath.length() - FileName.length();
+//                    String Folder = FilePath.substring(0, lastPos);
+//                    String [] originalpath=FilePath.split(":");
 
-
-                    Log.d("Filepath",FilePath);
-                    Log.d("Filepath",originalpath[0]);
-//                    Log.d("Filepath",originalpath[1]);
-//                    Log.d("Filepath",""+originalpath.length);
-
-
-                    File imgfile= new File(Environment.getExternalStorageDirectory()+"/"+originalpath[1]);
-                    Log.d("Filepath",imgfile.getAbsolutePath());
-                    try {
-                        FileInputStream fis=new FileInputStream(imgfile);
-                        Bitmap bitmap= BitmapFactory.decodeStream(fis);
-                        imageView.setImageBitmap(bitmap);
-                    } catch (FileNotFoundException e) {
-                        e.printStackTrace();
-                    }
-                    textView.setText(FilePath);
+//                    Log.d("Filepath",FilePath);
+//                    Log.d("Filepath",originalpath[0]);
+////                    Log.d("Filepath",originalpath[1]);
+////                    Log.d("Filepath",""+originalpath.length);
+//
+//
+//                    File imgfile= new File(Environment.getExternalStorageDirectory()+"/"+originalpath[1]);
+//                    Log.d("Filepath",imgfile.getAbsolutePath());
+//                    try {
+//                        FileInputStream fis=new FileInputStream(imgfile);
+//                        Bitmap bitmap= BitmapFactory.decodeStream(fis);
+//                        imageView.setImageBitmap(bitmap);
+//                    } catch (FileNotFoundException e) {
+//                        e.printStackTrace();
+//                    }
+//                    textView.setText(FilePath);
 
 
                 }
                 break;
 
         }
+    }
+
+    private Bitmap getImageFileFromSDCard(String filepath){
+        Bitmap bitmap = null;
+        File imageFile = new File(filepath);
+        Log.d("Path",imageFile.getAbsolutePath());
+        try {
+            FileInputStream fis = new FileInputStream(imageFile);
+            bitmap = BitmapFactory.decodeStream(fis);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return bitmap;
     }
 }
