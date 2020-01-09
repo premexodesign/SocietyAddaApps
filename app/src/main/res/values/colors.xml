@@ -7,4 +7,6 @@
 <!--    <color name="colorPrimaryDark">#fc9b00</color>-->
     <color name="splashbg_dark">#ffb90a</color>
     <color name="splashbg_light">#ffe750</color>
+    <color name="colorbtn">#ffd42a</color>
+    <color name="colornotificationbar">#ffe53f</color>
 </resources>

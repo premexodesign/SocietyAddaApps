@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationSociety"
+    android:orientation="vertical"
+    android:padding="14dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Details :"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/sretemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:id="@+id/sretpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:hint="Password"
+        />
+    <EditText
+        android:id="@+id/sretpasswordcnfm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:hint="Confirm Password"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Society Details :"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/sretsocityname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:hint="Society Name"
+        />
+    <Spinner
+        android:id="@+id/srspinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <EditText
+        android:id="@+id/sretwingandflat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:hint="Wing and flat [A - 1]"
+        />
+    <EditText
+        android:id="@+id/sretabout"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingLeft="10dp"
+        android:hint="About"
+        />
+    <TextView
+        android:id="@+id/textscrenext"
+        android:layout_gravity="end|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Next Page"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark"
+        />
+</LinearLayout>

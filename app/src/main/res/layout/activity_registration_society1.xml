@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationSociety1"
+    android:orientation="vertical"
+    android:padding="14dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basic Info :"
+        android:textStyle="bold"
+        />
+    <Spinner
+        android:id="@+id/srspinner_country"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+    <Spinner
+        android:id="@+id/srspinner_state"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+    <Spinner
+        android:id="@+id/srspinner_city"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+    <EditText
+        android:id="@+id/sretpincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:hint="Pincode"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/textscreprevious1"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Previous Page"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"
+            />
+        <TextView
+            android:id="@+id/textscrenext1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Next Page"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>

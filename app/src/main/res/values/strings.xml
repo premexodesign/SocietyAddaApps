@@ -24,5 +24,7 @@
     <string name="title_activity_check_in_out">Check In Out</string>
 
     <string name="submit_txt">Submit</string>
+    <string name="registertext"><u>Register</u></string>
+    <string name="socitytnctxt"><u>Terms &amp; Condition</u></string>
 
 </resources>
