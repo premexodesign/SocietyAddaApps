@@ -5,4 +5,6 @@
     <color name="colorAccent">#fc9b00</color>
     <color name="dashfragback">#E7E7E7</color>
 <!--    <color name="colorPrimaryDark">#fc9b00</color>-->
+    <color name="splashbg_dark">#ffb90a</color>
+    <color name="splashbg_light">#ffe750</color>
 </resources>

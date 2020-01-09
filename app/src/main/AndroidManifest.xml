@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".tenant.TenantActivity"></activity>
+        <activity android:name=".SplashScreen"></activity>
+        <activity android:name=".tenant.TenantActivity" />
         <activity android:name=".wings.WingDetailsActivity" />
         <activity android:name=".wings.WingsActivity" />
         <activity android:name=".society.SocietyFormActivity" />
