@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -26,11 +27,19 @@ public class LoginActivity extends AppCompatActivity {
         btnsubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (username.getText().toString().equals("premexo") && password.getText().toString().equals("Premexo")){
-                    Intent intent=new Intent(LoginActivity.this,MainActivity.class);
-                    startActivity(intent);
-                    finish();
+                if (!username.getText().toString().equalsIgnoreCase("") && !password.getText().toString().equalsIgnoreCase("")){
+                    if (username.getText().toString().equals("premexo") && password.getText().toString().equals("Premexo")){
+                        Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }else {
+                        Toast.makeText(LoginActivity.this, "Wrong Username or Password", Toast.LENGTH_SHORT).show();
+                    }
+                }else{
+                    Toast.makeText(LoginActivity.this, "Please Enter the username and password", Toast.LENGTH_SHORT).show();
                 }
+
+
             }
         });
         regbtn.setOnClickListener(new View.OnClickListener() {
