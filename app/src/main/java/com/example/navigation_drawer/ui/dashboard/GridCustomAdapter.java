@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.navigation_drawer.R;
+import com.example.navigation_drawer.complaints.Complaints;
 import com.example.navigation_drawer.members.MemberListActivity;
 import com.example.navigation_drawer.society.SocietyFormActivity;
 import com.example.navigation_drawer.tenant.TenantActivity;
@@ -69,7 +70,10 @@ public class GridCustomAdapter extends ArrayAdapter<String> {
                         Intent intent4=new Intent(context, TenantActivity.class);
                         context.startActivity(intent4);
                         break;
-
+                    case "Complaints":
+                        Intent intent5=new Intent(context, Complaints.class);
+                        context.startActivity(intent5);
+                        break;
                 }
 
             }

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="14dp"
+    tools:context=".complaints.Complaints">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <AutoCompleteTextView
+                android:id="@+id/complaints_houseid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="House no ex.A 201" />
+
+
+            <EditText
+                android:id="@+id/complaints_complain_nature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Complaints Nature" />
+
+
+            <EditText
+                android:id="@+id/complaints_ownername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Owner Name" />
+
+            <EditText
+                android:id="@+id/complaints_complain_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Complain Title" />
+
+            <EditText
+                android:id="@+id/complaints_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Category" />
+
+            <EditText
+                android:id="@+id/complaints_complain_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Complain Date" />
+
+            <EditText
+                android:id="@+id/complaints_complain_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Complain Time" />
+
+            <EditText
+                android:id="@+id/complaints_complain_createby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Complain Created by" />
+
+            <Spinner
+                android:id="@+id/complaints_complain_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/complaints_dynamicView"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/complaints_number_of_person"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Number of Person" />
+
+                    <ImageButton
+                        android:id="@+id/complaints_number_of_person_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/checkimgwings" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/complaints_number_of_person_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/complaints_btnsubmit"
+                android:text="Submit"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

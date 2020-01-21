@@ -17,7 +17,7 @@
             android:id="@+id/tenant_houseid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="House" />
+            android:hint="House no ex.A 201" />
 
         <EditText
             android:id="@+id/tenant_firstname"

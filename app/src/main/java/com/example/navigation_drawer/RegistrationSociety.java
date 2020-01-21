@@ -36,8 +36,6 @@ public class RegistrationSociety extends AppCompatActivity {
         ArrayAdapter<String> arrayAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,spinnerdata);
         srsotype.setAdapter(arrayAdapter);
 
-
-
         tvnext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

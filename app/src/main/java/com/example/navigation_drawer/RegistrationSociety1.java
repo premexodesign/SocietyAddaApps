@@ -64,9 +64,15 @@ public class RegistrationSociety1 extends AppCompatActivity {
         previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(RegistrationSociety1.this,RegistrationSociety.class);
-                startActivity(i);
+//                Intent i=new Intent(RegistrationSociety1.this,RegistrationSociety.class);
+//                startActivity(i);
+                onBackPressed();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 }
